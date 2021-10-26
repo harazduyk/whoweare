@@ -1,0 +1,105 @@
+@import "mixins";
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.header {
+    text-align: center;
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-top: 5%;
+    }
+    hr {
+        height: 5px;
+        width: 3%;
+        background-color: #dddbdb;
+        border: none;
+        margin: 0 auto;
+    }
+    p {
+        width: 40%;
+        line-height: 1.5;
+        margin: 2% auto 4% auto;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    & .block {
+        & .first_image {
+            opacity: 1;
+            background-image: url(./images/1.jpg);
+            @include backgroundImage;
+            &:hover .links {
+                opacity: 1;
+            }
+            & .links {
+                opacity: 0;
+                @include backroundlinks;
+                a {
+                    @include styleLinks;
+                }
+            }
+        }
+        .second_image {
+            opacity: 1;
+            background-image: url(./images/2.png);
+            @include backgroundImage;
+            &:hover .links {
+                opacity: 1;
+            }
+            .links {
+                opacity: 0;
+                @include backroundlinks;
+                a {
+                    @include styleLinks;
+                }
+            }
+        }
+        .third_image {
+            opacity: 1;
+            background-image: url(./images/3.png);
+            @include backgroundImage;
+            &:hover .links {
+                opacity: 1;
+            }
+            .links {
+                opacity: 0;
+                @include backroundlinks;
+                a {
+                    @include styleLinks;
+                }
+            }
+        }
+        .fourth_image {
+            opacity: 1;
+            background-image: url(./images/4.png);
+            @include backgroundImage;
+            &:hover .links {
+                opacity: 1;
+            }
+            .links {
+                opacity: 0;
+                @include backroundlinks;
+                a {
+                    @include styleLinks;
+                }
+            }
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 5%;
+        }
+        h5 {
+            font-weight: 300;
+        }
+    }
+}
+
+
+
