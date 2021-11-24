@@ -34,6 +34,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main .block .first_image {
@@ -212,5 +214,6 @@ body {
 
 .main .block h5 {
   font-weight: 300;
+  margin-bottom: 15%;
 }
 /*# sourceMappingURL=style.css.map */

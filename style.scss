@@ -1,5 +1,4 @@
 @import "mixins";
-
 body {
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -29,6 +28,7 @@ body {
 .main {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     & .block {
         & .first_image {
             opacity: 1;
@@ -97,9 +97,7 @@ body {
         }
         h5 {
             font-weight: 300;
+            margin-bottom: 15%;
         }
     }
 }
-
-
-
